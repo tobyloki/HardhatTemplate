@@ -45,11 +45,11 @@ pnpm run deploy
 
 2. Deploy contract under you account address
 
-    - Make note of the contract address
-
     ```bash
     pnpm deploy:zkEVM
     ```
+
+    - Make note of the contract address after deployment
 
 3. Verify contract on PolygonScan using the contract address from the previous step
 
