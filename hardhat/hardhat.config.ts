@@ -13,6 +13,24 @@ const config: HardhatUserConfig = {
 			url: `https://rpc.public.zkevm-test.net`,
 			accounts: [process.env.ACCOUNT_PRIVATE_KEY]
 		}
+	},
+	etherscan: {
+		apiKey: {
+			zkEVM: process.env.POLYGONSCAN_API_KEY
+		},
+		customChains: [
+			{
+				network: 'zkEVM',
+				chainId: 1442,
+				urls: {
+					apiURL: 'https://api-testnet-zkevm.polygonscan.com/api',
+					browserURL: 'https://testnet-zkevm.polygonscan.com'
+				}
+			}
+		]
+	},
+	sourcify: {
+		enabled: false
 	}
 };
 

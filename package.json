@@ -9,7 +9,8 @@
 		"test:gas": "pnpm --filter ./hardhat run test:gas",
 		"node": "pnpm --filter ./hardhat run node",
 		"deploy": "pnpm --filter ./hardhat run deploy",
-		"deploy:zkEVM": "pnpm --filter ./hardhat run deploy:zkEVM"
+		"deploy:zkEVM": "pnpm --filter ./hardhat run deploy:zkEVM",
+		"verify:zkEVM": "pnpm --filter ./hardhat run verify:zkEVM"
 	},
 	"keywords": [],
 	"author": "",

@@ -36,14 +36,23 @@ pnpm run deploy
 
 ## Deploy on Polygon zkEVM testnet
 
-1. Set `ACCOUNT_PRIVATE_KEY` (e.g. Metamask account private key) in a `.env` file
+1. Set variables in `.env` file
 
-```env
-ACCOUNT_PRIVATE_KEY=<your private key>
-```
+    1. Set `ACCOUNT_PRIVATE_KEY`
+        - e.g. Metamask account private key
+    2. Set `POLYGONSCAN_API_KEY`
+        - get key from https://zkevm.polygonscan.com/myapikey
 
 2. Deploy contract under you account address
 
-```bash
-pnpm deploy:zkEVM
-```
+    - Make note of the contract address
+
+    ```bash
+    pnpm deploy:zkEVM
+    ```
+
+3. Verify contract on PolygonScan using the contract address from the previous step
+
+    ```bash
+    pnpm verify:zkEVM <contract address>
+    ```
