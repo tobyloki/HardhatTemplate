@@ -9,20 +9,29 @@ Directories inside of `hardhat` directory
 -   `scripts`: Scripts for deploying contracts (typically not modified)
 -   `hardhat.config.js`: Hardhat configuration file (e.g. adding more network deployment options)
 
+## Pre-requisites
+
+1. Install this Solidity VSCode extension: https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity
+2. Install `pnpm` package manager: `npm i -g pnpm`
+
 ## Setup
 
 ```bash
-cd hardhat
-
-npm i
+pnpm i
 ```
 
 ## Compile & test contract
 
 ```bash
-npm run compile
+pnpm compile
 
-npm run test
+pnpm test
+```
+
+## Deploy on local hardhat node
+
+```bash
+pnpm run deploy
 ```
 
 ## Deploy on Polygon zkEVM testnet
@@ -36,5 +45,5 @@ ACCOUNT_PRIVATE_KEY=<your private key>
 2. Deploy contract under you account address
 
 ```bash
-npm run deploy-zkEVM
+pnpm deploy:zkEVM
 ```
