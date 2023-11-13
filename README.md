@@ -27,7 +27,7 @@ npm run test
 
 ## Deploy on Polygon zkEVM testnet
 
-1. Set `ACCOUNT_PRIVATE_KEY` (e.g. Metamask account private key) in `.env`
+1. Set `ACCOUNT_PRIVATE_KEY` (e.g. Metamask account private key) in a `.env` file
 
 ```env
 ACCOUNT_PRIVATE_KEY=<your private key>
